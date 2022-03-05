@@ -1,0 +1,7 @@
+<div class="parent">
+    <h2>Parent component</h2>
+    <ul>
+        <li *ngFor="let todje of djeca">{{todje}}</li>
+    </ul>
+    <app-left-side [djete]="trenutnoDjete" (novoDjeteEvent)="dodajDjete($event)"></app-left-side>
+</div>
